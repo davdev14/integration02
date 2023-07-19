@@ -11,5 +11,35 @@
 }
 @font-face {
   font-family: core;
-  src: url("/fonts/Core.otf") format("opentype");
+  src: url("/fonts/Core\ Sans_fonts/") format("opentype");
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.hero-image {
+  background-image: url(/assets/images/shop-hero-1-product-slide-1@2x.png);
 }

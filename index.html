@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/dist/output.css" />
     <title>Ecommerce website</title>
   </head>
   <body>
-    <nav class="flex items-center px-[102px] py-8 justify-between">
+    <nav
+      class="flex items-center px-5 md:px-10 lg:px-[102px] py-8 justify-between"
+    >
       <div class="w-max cursor-pointer">
         <p class="font-mintaka text-4xl text-euphoria-black">Euphoria</p>
         <div class="relative top-[-8px]">
@@ -15,11 +21,17 @@
             <img src="/assets/icons/Group.svg" alt="icon" />
             <img src="/assets/icons/Group (1).svg" alt="icon" />
           </div>
-          <img class="float-right pr-1" src="/assets/icons/Group (2).svg" alt="" />
+          <img
+            class="float-right pr-1"
+            src="/assets/icons/Group (2).svg"
+            alt=""
+          />
         </div>
       </div>
-      <div>
-        <ul class="font-causten text-euphoria-grey xl:text-[22px] font-medium flex gap-x-10">
+      <div class="hidden lg:block">
+        <ul
+          class="font-causten text-euphoria-grey xl:text-[22px] font-medium flex gap-x-10"
+        >
           <li class="font-bold text-euphoria-black cursor-pointer">Shop</li>
           <li class="cursor-pointer">Men</li>
           <li class="cursor-pointer">Women</li>
@@ -27,19 +39,120 @@
           <li class="cursor-pointer">Joggers</li>
         </ul>
       </div>
-      <div>
-        <img class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer 2xl:hidden" src="/assets/icons/search.svg" alt="icon">
-        <div class="font-causten px-5 py-3 2xl:flex items-center bg-euphoria-white-bg gap-x-3 rounded-lg hidden">
-          <img src="/assets/icons/search.svg" alt="icon">
-          <input class="bg-euphoria-white-bg placeholder:text-euphoria-grey h-5 w-[227px] outline-none" placeholder="Search" type="search">
+      <div class="hidden lg:block">
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer 2xl:hidden"
+          src="/assets/icons/search.svg"
+          alt="icon"
+        />
+        <div
+          class="font-causten px-5 py-3 2xl:flex items-center bg-euphoria-white-bg gap-x-3 rounded-lg hidden"
+        >
+          <img src="/assets/icons/search.svg" alt="icon" />
+          <input
+            class="bg-euphoria-white-bg placeholder:text-euphoria-grey h-5 w-[227px] outline-none"
+            placeholder="Search"
+            type="search"
+          />
         </div>
       </div>
-      
-      <div class="flex gap-x-3">
-        <img class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer" src="/assets/icons/heart.svg" alt="icon">
-        <img class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer" src="/assets/icons/user.svg" alt="icon">
-        <img class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer" src="/assets/icons/shopping cart.svg" alt="icon">
+
+      <div class="lg:flex gap-x-3 hidden">
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer"
+          src="/assets/icons/heart.svg"
+          alt="icon"
+        />
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer"
+          src="/assets/icons/user.svg"
+          alt="icon"
+        />
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer"
+          src="/assets/icons/shopping cart.svg"
+          alt="icon"
+        />
+      </div>
+      <div class="hamburger">
+        <button>
+          <img
+            class="menu-icon lg:hidden"
+            src="/assets/icons/Menu.svg"
+            alt="menu-icon"
+          />
+        </button>
+      </div>
+      <div
+        class="menu bg-white translate-x-[100%] shadow-2xl fixed transition-transform duration-[0.2s] top-0 left-[30%] right-0 bottom-0 z-50"
+      >
+        <div class="close-icon flex justify-end p-8">
+          <img src="/assets/icons/Close.svg" alt="icon" />
+        </div>
+        <div>
+          <ul
+            class="font-causten text-euphoria-grey text-[22px] font-medium p-8 space-y-8"
+          >
+            <li class="font-bold text-euphoria-black cursor-pointer">Shop</li>
+            <li class="cursor-pointer">Men</li>
+            <li class="cursor-pointer">Women</li>
+            <li class="cursor-pointer">Combos</li>
+            <li class="cursor-pointer">Joggers</li>
+          </ul>
+        </div>
       </div>
     </nav>
+    <main>
+      <section class="h-[716px]">
+        <div
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+          class="swiper mySwiper"
+        >
+          <div class="parallax-bg hero-image bg-cover bg-center"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="pl-[130px] space-y-10 font-core">
+                <div class="text-[32px] font-medium tracking-[1px]" data-swiper-parallax="-300">
+                  T-shirt / Tops
+                </div>
+                <div class="text-[78px] font-extrabold tracking-widest leading-[94px] max-w-[580px]" data-swiper-parallax="-200">
+                  Summer Value Pack
+                </div>
+                <div class="text-[32px] font-medium tracking-[1px]" data-swiper-parallax="-100">
+                  cool / colorful / comfy
+                </div>
+                <div class="text" data-swiper-parallax="-100">
+                  <button class="px-[72px] py-4 bg-white text-euphoria-black rounded-lg font-causten text-2xl font-bold text-center">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pl-[130px] space-y-10 font-core">
+                <div class="text-[32px] font-medium tracking-[1px]" data-swiper-parallax="-300">
+                  Jackets / Hoodies
+                </div>
+                <div class="text-[78px] font-extrabold tracking-widest leading-[94px] max-w-[580px]" data-swiper-parallax="-200">
+                  Winter Value Pack
+                </div>
+                <div class="text-[32px] font-medium tracking-[1px]" data-swiper-parallax="-100">
+                  cool / colorful / comfy
+                </div>
+                <div class="text" data-swiper-parallax="-100">
+                  <button class="px-[72px] py-4 bg-white text-euphoria-black rounded-lg font-causten text-2xl font-bold text-center">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next pr-[40px]"></div>
+          <div class="swiper-button-prev pl-[40px]"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
