@@ -598,6 +598,10 @@ video {
   height: 716px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .w-\[227px\] {
   width: 227px;
 }
@@ -697,6 +701,10 @@ video {
   background-position: center;
 }
 
+.bg-left {
+  background-position: left;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -732,6 +740,16 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pl-\[130px\] {
@@ -924,14 +942,92 @@ video {
   color: rgb(128 125 126 / var(--tw-text-opacity));
 }
 
+@media (min-width: 320px) {
+  .ls\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .ls\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:grid {
     display: grid;
   }
 
+  .md\:max-w-\[580px\] {
+    max-width: 580px;
+  }
+
+  .md\:max-w-\[200px\] {
+    max-width: 200px;
+  }
+
+  .md\:max-w-\[300px\] {
+    max-width: 300px;
+  }
+
+  .md\:max-w-\[250px\] {
+    max-width: 250px;
+  }
+
+  .md\:max-w-\[255px\] {
+    max-width: 255px;
+  }
+
+  .md\:max-w-\[260px\] {
+    max-width: 260px;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:px-\[72px\] {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .md\:pl-\[40px\] {
+    padding-left: 40px;
+  }
+
+  .md\:pr-\[40px\] {
+    padding-right: 40px;
+  }
+
+  .md\:pl-5 {
+    padding-left: 1.25rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .md\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -948,8 +1044,16 @@ video {
     display: none;
   }
 
+  .lg\:h-\[716px\] {
+    height: 716px;
+  }
+
   .lg\:max-w-\[580px\] {
     max-width: 580px;
+  }
+
+  .lg\:bg-center {
+    background-position: center;
   }
 
   .lg\:px-\[102px\] {

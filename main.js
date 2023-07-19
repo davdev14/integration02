@@ -8,7 +8,7 @@ function toggleMenu() {
   if (menu && menu.classList.contains("translate-x-[100%]")) {
     menu.classList.remove("translate-x-[100%]");
     if (closeIcon) closeIcon.style.display = "flex";
-    if (hamburger) hamburger.style.display = "none";
+    if (hamburger) hamburger.style.display = "none";const swiper = document.querySelector('.swiper').swiper;
   } else {
     menu && menu.classList.add("translate-x-[100%]");
     if (closeIcon) closeIcon.style.display = "none";
@@ -26,7 +26,7 @@ if (closeIcon) {
     : closeIcon.addEventListener("click", toggleMenu);
 }
 
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {    
   speed: 600,
   parallax: true,
   pagination: {
