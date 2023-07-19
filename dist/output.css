@@ -570,6 +570,14 @@ video {
   float: right;
 }
 
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
+.mt-\[130px\] {
+  margin-top: 130px;
+}
+
 .flex {
   display: flex;
 }
@@ -582,6 +590,10 @@ video {
   height: 1.25rem;
 }
 
+.h-\[356px\] {
+  height: 356px;
+}
+
 .h-\[716px\] {
   height: 716px;
 }
@@ -590,13 +602,17 @@ video {
   width: 227px;
 }
 
+.w-\[605px\] {
+  width: 605px;
+}
+
 .w-max {
   width: -moz-max-content;
   width: max-content;
 }
 
-.max-w-\[470px\] {
-  max-width: 470px;
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-\[580px\] {
@@ -610,6 +626,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .items-center {
@@ -639,8 +659,10 @@ video {
        column-gap: 0.75rem;
 }
 
-.gap-y-10 {
-  row-gap: 2.5rem;
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -649,14 +671,12 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-euphoria-white-bg {
@@ -677,6 +697,10 @@ video {
   background-position: center;
 }
 
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -690,24 +714,24 @@ video {
   padding-right: 1.25rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .px-\[72px\] {
   padding-left: 72px;
   padding-right: 72px;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pl-\[130px\] {
@@ -726,6 +750,14 @@ video {
   padding-right: 40px;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -734,12 +766,17 @@ video {
   font-family: causten, sans;
 }
 
+.font-core {
+  font-family: core, sans;
+}
+
 .font-mintaka {
   font-family: mintaka, sans;
 }
 
-.font-core {
-  font-family: core, sans;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -759,9 +796,14 @@ video {
   font-size: 78px;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -774,10 +816,6 @@ video {
 
 .font-medium {
   font-weight: 500;
-}
-
-.capitalize {
-  text-transform: capitalize;
 }
 
 .leading-\[94px\] {
@@ -842,7 +880,7 @@ video {
 }
 
 .swiper {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: #000;
 }
@@ -868,6 +906,14 @@ video {
   background-image: url(/assets/images/shop-hero-1-product-slide-1@2x.png);
 }
 
+.high-coziness-bg {
+  background-image: url(/assets/images/unsplash_Qyc13QBGaM4.jpg);
+}
+
+.breezy-summer-bg {
+  background-image: url(/assets/images/unsplash_Qyc13QBGaM4\ \(1\).jpg);
+}
+
 .placeholder\:text-euphoria-grey::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(128 125 126 / var(--tw-text-opacity));
@@ -879,6 +925,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -898,9 +948,39 @@ video {
     display: none;
   }
 
+  .lg\:max-w-\[580px\] {
+    max-width: 580px;
+  }
+
   .lg\:px-\[102px\] {
     padding-left: 102px;
     padding-right: 102px;
+  }
+
+  .lg\:px-\[72px\] {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:pl-\[130px\] {
+    padding-left: 130px;
+  }
+
+  .lg\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .lg\:text-\[78px\] {
+    font-size: 78px;
+  }
+
+  .lg\:leading-\[94px\] {
+    line-height: 94px;
   }
 }
 

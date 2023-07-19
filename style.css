@@ -15,7 +15,7 @@
 }
 
 .swiper {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: #000;
 }
@@ -42,4 +42,10 @@
 
 .hero-image {
   background-image: url(/assets/images/shop-hero-1-product-slide-1@2x.png);
+}
+.high-coziness-bg {
+  background-image: url(/assets/images/unsplash_Qyc13QBGaM4.jpg);
+}
+.breezy-summer-bg {
+  background-image: url(/assets/images/unsplash_Qyc13QBGaM4\ \(1\).jpg);
 }
