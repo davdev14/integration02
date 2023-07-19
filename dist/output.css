@@ -534,11 +534,173 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.top-\[-8px\] {
+  top: -8px;
+}
+
+.float-right {
+  float: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.w-\[227px\] {
+  width: 227px;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.bg-euphoria-white-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 246 246 / var(--tw-bg-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-\[102px\] {
+  padding-left: 102px;
+  padding-right: 102px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.font-causten {
+  font-family: causten, sans;
+}
+
+.font-mintaka {
+  font-family: mintaka, sans;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.font-semibold {
-  font-weight: 600;
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-euphoria-black {
+  --tw-text-opacity: 1;
+  color: rgb(60 66 66 / var(--tw-text-opacity));
+}
+
+.text-euphoria-grey {
+  --tw-text-opacity: 1;
+  color: rgb(128 125 126 / var(--tw-text-opacity));
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@font-face {
+  font-family: mintaka;
+
+  src: url("/fonts/Mintaka.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: causten;
+
+  src: url("/fonts/Causten-Round/Causten-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: core;
+
+  src: url("/fonts/Core.otf") format("opentype");
+}
+
+.placeholder\:text-euphoria-grey::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(128 125 126 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-euphoria-grey::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(128 125 126 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1440px) {
+  .\32xl\:flex {
+    display: flex;
+  }
+
+  .\32xl\:hidden {
+    display: none;
+  }
 }

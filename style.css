@@ -1,3 +1,15 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@font-face {
+  font-family: mintaka;
+  src: url("/fonts/Mintaka.ttf") format("truetype");
+}
+@font-face {
+  font-family: causten;
+  src: url("/fonts/Causten-Round/Causten-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: core;
+  src: url("/fonts/Core.otf") format("opentype");
+}
