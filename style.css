@@ -13,6 +13,12 @@
   font-family: core;
   src: url("/fonts/Core\ Sans_fonts/") format("opentype");
 }
+@font-face {
+  font-family: montserrat;
+  src: url("/fonts/montserrat\ full\ version/") format("opentype");
+}
+
+
 
 .swiper {
   width: 100vw;
@@ -47,5 +53,27 @@
   background-image: url(/assets/images/unsplash_Qyc13QBGaM4.jpg);
 }
 .breezy-summer-bg {
-  background-image: url(/assets/images/unsplash_Qyc13QBGaM4\ \(1\).jpg);
+  background: url("/assets/images/unsplash_Qyc13QBGaM4\ \(1\).png");
+  background-size: cover;
+}
+.card-shadow {
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.40);
+}
+.hawaiian-shirts-bg {
+  background-image: url("/assets/images/Rectangle\ 74.png");
+}
+.printed-Tshirts-bg {
+  background-image: url("/assets/images/Rectangle\ 75.png");
+}
+.cargo-joggers-bg {
+  background-image: url("/assets/images/Rectangle\ 76.png");
+}
+.urban-shirts-bg {
+  background-image: url("/assets/images/Rectangle\ 77.png");
+}
+.oversized-Tshirts-bg {
+  background-image: url("/assets/images/Rectangle\ 78.png");
+}
+.fashion-better-bg {
+  background-image: url("/assets/images/unsplash_bBiuSdck8tU.png");
 }

@@ -4,6 +4,15 @@ const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".close-icon");
 const menuIcon = document.querySelector(".menu-icon");
 
+window.addEventListener('beforeunload', () => {
+  sessionStorage.setItem('scrollPosition', window.scrollY);
+});
+
+window.addEventListener('load', () => {
+  const scrollPosition = sessionStorage.getItem('scrollPosition') || 0;
+  window.scrollTo(0, scrollPosition);
+});
+
 function toggleMenu() {
   if (menu && menu.classList.contains("translate-x-[100%]")) {
     menu.classList.remove("translate-x-[100%]");

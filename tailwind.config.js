@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     screens: {
       "ls": "320px",
-      "sm": "640px",
+      "sm": "375px",
       "md": "768px",
       "lg": "1024px",
       "xl": "1280px",
@@ -17,12 +17,14 @@ module.exports = {
       fontFamily: {
         mintaka: ["mintaka", "sans"],
         causten: ["causten", "sans"],
-        core: ["core", "sans"]
+        core: ["core", "sans"],
+        montserrat: ['montserrat', "sans"]
       },
       colors: {
         'euphoria-black': '#3C4242',
         'euphoria-grey': '#807D7E',
         'euphoria-white-bg': '#F6F6F6',
+        'euphoria-voilet': '#8A33FD',
       }
     },
   },
