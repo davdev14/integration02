@@ -1457,6 +1457,10 @@ video {
     padding-top: 30px;
   }
 
+  .xl\:pr-\[96px\] {
+    padding-right: 96px;
+  }
+
   .xl\:text-\[22px\] {
     font-size: 22px;
   }
