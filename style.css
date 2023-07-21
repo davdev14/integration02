@@ -17,7 +17,10 @@
   font-family: montserrat;
   src: url("/fonts/montserrat\ full\ version/") format("opentype");
 }
-
+html,body {
+  margin: 0;
+  overflow: auto;
+}
 
 
 .swiper {
@@ -76,4 +79,16 @@
 }
 .fashion-better-bg {
   background-image: url("/assets/images/unsplash_bBiuSdck8tU.png");
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.swiper-slide2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  height: 100%;
 }
