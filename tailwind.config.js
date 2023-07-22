@@ -26,6 +26,7 @@ module.exports = {
         'euphoria-white-bg': '#F6F6F6',
         'euphoria-voilet': '#8A33FD',
         'euphoria-secondary-grey': '#7F7F7F',
+        'border-color': '#bebcbd'
       }
     },
   },

@@ -92,3 +92,6 @@ html,body {
   padding: 20px 0;
   height: 100%;
 }
+.grid-custom {
+  grid-template-columns: 295px auto;
+}

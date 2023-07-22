@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/output.css" />
+  <title>product list</title>
+</head>
+<body>
+  <nav
+      class="flex items-center py-2 px-5 md:px-10 xl:px-[102px] lg:py-8 justify-between border-b border-border-color"
+    >
+      <div class="w-max cursor-pointer">
+        <p class="font-mintaka text-4xl text-euphoria-black">Euphoria</p>
+        <div class="relative top-[-8px]">
+          <div class="flex gap-x-2">
+            <img src="/assets/icons/Group.svg" alt="icon" />
+            <img src="/assets/icons/Group (1).svg" alt="icon" />
+          </div>
+          <img
+            class="float-right flex flex-col items-start pr-1"
+            src="/assets/icons/Group (2).svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="hidden lg:block">
+        <ul
+          class="font-causten text-euphoria-grey xl:text-[22px] font-medium flex gap-x-10"
+        >
+          <li class="font-bold text-euphoria-black cursor-pointer">Shop</li>
+          <li class="cursor-pointer">Men</li>
+          <li class="cursor-pointer">Women</li>
+          <li class="cursor-pointer">Combos</li>
+          <li class="cursor-pointer">Joggers</li>
+        </ul>
+      </div>
+      <div class="hidden lg:block">
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer 2xl:hidden"
+          src="/assets/icons/search.svg"
+          alt="icon"
+        />
+        <div
+          class="font-causten px-5 py-3 2xl:flex items-center bg-euphoria-white-bg gap-x-3 rounded-lg hidden"
+        >
+          <img src="/assets/icons/search.svg" alt="icon" />
+          <input
+            class="bg-euphoria-white-bg placeholder:text-euphoria-grey h-5 w-[175px] outline-none"
+            placeholder="Search"
+            type="search"
+          />
+        </div>
+      </div>
+
+      <div class="lg:flex gap-x-3 hidden">
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer"
+          src="/assets/icons/heart.svg"
+          alt="icon"
+        />
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer"
+          src="/assets/icons/user.svg"
+          alt="icon"
+        />
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer"
+          src="/assets/icons/shopping cart.svg"
+          alt="icon"
+        />
+      </div>
+      <div class="hamburger lg:hidden">
+        <button>
+          <img
+            class="menu-icon "
+            src="/assets/icons/Menu.svg"
+            alt="menu-icon"
+          />
+        </button>
+      </div>
+      <div
+        class="menu bg-white translate-x-[100%] shadow-2xl fixed transition-transform duration-[0.2s] top-0 left-[30%] right-0 bottom-0 z-50"
+      >
+        <div class="close-icon flex justify-end p-8">
+          <img src="/assets/icons/Close.svg" alt="icon" />
+        </div>
+        <div>
+          <ul
+            class="font-causten text-euphoria-grey text-[22px] font-medium p-8 space-y-8"
+          >
+            <li class="font-bold text-euphoria-black cursor-pointer">Shop</li>
+            <li class="cursor-pointer">Men</li>
+            <li class="cursor-pointer">Women</li>
+            <li class="cursor-pointer">Combos</li>
+            <li class="cursor-pointer">Joggers</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="px-5 md:px-10 xl:px-[102px] lg:grid grid-custom font-causten">
+      <aside class="border-l border-r border-border-color px-8 hidden lg:block">
+        <div class="flex justify-between items-center py-5">
+          <p class="text-euphoria-grey text-xl font-semibold">Filter</p>
+          <img src="/assets/icons/filter.svg" alt="icon">
+        </div>
+      </aside>
+      <section class="pl-[50px]">
+        <div class="flex justify-between text-euphoria-black text-xl font-semibold py-[50px]">
+          <p class="">Women’s Clothing</p>
+          <div class="flex gap-x-[25px]">
+            <p class="text-[#8A33FD]">New</p>
+            <p>Recommended</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-[52px]">
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/Rectangle 25.png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">Black Sweatshirt with ....</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$123.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">Jhanvi’s  Brand</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>
