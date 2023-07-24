@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/dist/output.css" />
-  <title>product list</title>
+  <title>products list</title>
 </head>
-<body>
+<body class="">
   <nav
-      class="flex items-center py-2 px-5 md:px-10 xl:px-[102px] lg:py-8 justify-between border-b border-border-color"
+      class="flex items-center py-2 px-5 md:px-10 xl:px-[102px] lg:py-8 justify-between border-b border-border-color fixed top-0 w-full z-50 bg-white"
     >
       <div class="w-max cursor-pointer">
         <p class="font-mintaka text-4xl text-euphoria-black">Euphoria</p>
@@ -98,35 +98,425 @@
         </div>
       </div>
     </nav>
-    <main class="px-5 md:px-10 xl:px-[102px] lg:grid grid-custom font-causten">
-      <aside class="border-l border-r border-border-color px-8 hidden lg:block">
-        <div class="flex justify-between items-center py-5">
+    <main class="px-5 md:px-10 xl:px-[102px] lg:grid grid-custom font-causten mt-[80px] md:mt-[50px] lg:mt-[114px]">
+      <aside class="hidden lg:block">
+        <div class="flex justify-between items-center py-5 border border-border-color px-8">
           <p class="text-euphoria-grey text-xl font-semibold">Filter</p>
           <img src="/assets/icons/filter.svg" alt="icon">
         </div>
+        <div class="py-5 px-8 border-b border-l border-r border-border-color">
+          <ul class="text-euphoria-secondary-grey font-semibold flex flex-col gap-y-[18px]">
+            <li class="flex justify-between items-center"><p>Tops</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            <li class="flex justify-between items-center"><p>Printed T-shirts</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            <li class="flex justify-between items-center"><p>Plain T-shirts</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            <li class="flex justify-between items-center"><p>Kurti</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            <li class="flex justify-between items-center"><p>Boxers</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            <li class="flex justify-between items-center"><p>Full sleeve T-shirts</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            <li class="flex justify-between items-center"><p>Joggers</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            <li class="flex justify-between items-center"><p>Payjamas</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            <li class="flex justify-between items-center"><p>Jeans</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+          </ul>
+        </div>
+        <div class="flex justify-between items-center py-5 px-8 border-b border-l border-r border-border-color">
+          <p class="text-euphoria-grey text-[22px] font-semibold">Price</p>
+          <img src="/assets/icons/Icon (2).svg" alt="icon">
+        </div>
+        <div class="px-8 py-5 border-b border-l border-r border-border-color">
+          <div class="d-flex">
+            <div class="wrapper ">
+              <div class="slider">
+                <div class="progress"></div>
+              </div>
+              <div class="range-input">
+                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+              </div>
+              <div class="price-input flex justify-between items-center text-euphoria-black font-medium pt-5">
+                <div class="rounded-lg border border-border-color px-4">$70</div>
+                <div class="rounded-lg border border-border-color px-4">$600</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center py-5 px-8 border-b border-l border-r border-border-color">
+            <p class="text-euphoria-grey text-[22px] font-semibold">Colors</p>
+            <img src="/assets/icons/Icon (2).svg" alt="icon">
+          </div>
+          <div class="py-5 px-8 grid grid-cols-4 gap-x-[19px] gap-y-[18px] border-b border-l border-r border-border-color">
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#8434E1]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Purple</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#252525]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Black</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#F35528]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Red</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#F35528]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Orange</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#345EFF]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Navy</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#FFFFFF] border border-[#F4F1F1]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">White</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#D67E3B]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Broom</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#48BC4E]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Green</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#FDC761]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Yellow</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#E4E5E8]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Grey</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#E08D9D]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Pink</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="h-9 w-9 rounded-xl bg-[#3FDEFF]"></div>
+              <p class="text-euphoria-secondary-grey text-sm font-semibold pt-[18px]">Blue</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center py-5 px-8 border-b border-l border-r border-border-color">
+            <p class="text-euphoria-grey text-[22px] font-semibold">Size</p>
+            <img src="/assets/icons/Icon (2).svg" alt="icon">
+          </div>
+          <div class="py-5 px-8 border-b border-l border-r border-border-color">
+            <ul class="text-sm text-euphoria-black grid grid-cols-3 gap-x-5 gap-y-[26px]">
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>XXS</p></li>
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>XL</p></li>
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>XS</p></li>
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>S</p></li>
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>M</p></li>
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>L</p></li>
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>XXL</p></li>
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>3XL</p></li>
+              <li class="border border-border-color flex justify-center items-center rounded-lg w-[61px] py-1"><p>4XL</p></li>
+            </ul>
+          </div>
+          <div class="flex justify-between items-center py-5 px-8 border-b border-l border-r border-border-color">
+            <p class="text-euphoria-grey text-[22px] font-semibold">Dress Style</p>
+            <img src="/assets/icons/Icon (2).svg" alt="icon">
+          </div>
+          <div class="py-5 px-8 border-b border-l border-r border-border-color">
+            <ul class="text-euphoria-secondary-grey font-semibold flex flex-col gap-y-[18px]">
+              <li class="flex justify-between items-center"><p>Classic</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+              <li class="flex justify-between items-center"><p>Casual</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+              <li class="flex justify-between items-center"><p>Business</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+              <li class="flex justify-between items-center"><p>Sport</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+              <li class="flex justify-between items-center"><p>Elegant</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+              <li class="flex justify-between items-center"><p>Formal (evening)</p> <img src="/assets/icons/Icon (1).svg" alt="icon"></li>
+            </ul>
+          </div>
       </aside>
-      <section class="pl-[50px]">
-        <div class="flex justify-between text-euphoria-black text-xl font-semibold py-[50px]">
+      <section class="md:pl-5">
+        <div class="hidden md:flex justify-between text-euphoria-black text-xl font-semibold md:py-[50px]">
           <p class="">Women’s Clothing</p>
           <div class="flex gap-x-[25px]">
             <p class="text-[#8A33FD]">New</p>
             <p>Recommended</p>
           </div>
         </div>
+        <div class="md:hidden pb-8 flex justify-end">
+          <select name="options" id="options" class="p-2 rounded-md outline-none">
+            <option value="Women’s Clothing">Women’s Clothing</option>
+            <option value="New">New</option>
+            <option value="Recommended">Recommended</option>
+          </select>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-[52px]">
           <div class="w-full font-causten">
-            <div class="relative"><img class="h-full w-full" src="/assets/images/Rectangle 25.png" alt="image">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25.png" alt="image">
             <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
             </div>
             <div class="pt-[16px] flex justify-between items-center">
-              <p class="text-euphoria-black text-base font-semibold">Black Sweatshirt with ....</p>
+              <p class="text-euphoria-black text-base font-semibold">Black Sweatshirt with .</p>
               <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$123.00</div>
             </div>
             <p class="text-euphoria-secondary-grey text-sm font-medium">Jhanvi’s  Brand</p>
           </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (1).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">White T-shirt</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$11.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">Helen’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (2).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">Levender Hoodie with .</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$119.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">Nike’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (3).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">Leaves Pattern White</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$77.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">paypal’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (4).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">White Graphic Crop Top</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$29.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">woden’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (5).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">Black Shorts</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$37.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">MM’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (6).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">Barboreal Gray Sweats</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$77.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium"></p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (7).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">Yellow Sweatshirt</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$29.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">woden’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (8).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">Flower Pattern Black C</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$37.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">MM’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (9).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">I Don’t Graphic T-shirt </p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$77.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">Nisargi’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (10).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">Blue Flower Print Crop .</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$29.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">Mellon’s  Brand</p>
+          </div>
+          <div class="w-full font-causten">
+            <div class="relative"><img class="h-full w-full" src="/assets/images/products/Rectangle 25 (11).png" alt="image">
+            <img class="absolute top-[25px] right-[21px]" src="/assets/icons/Frame 49.svg" alt="heart-icon">
+            </div>
+            <div class="pt-[16px] flex justify-between items-center">
+              <p class="text-euphoria-black text-base font-semibold">line Pattern Black H</p>
+              <div class="rounded-lg px-4 py-2 bg-euphoria-white-bg text-euphoria-black font-bold">$37.00</div>
+            </div>
+            <p class="text-euphoria-secondary-grey text-sm font-medium">AS’s  Brand</p>
+          </div>
         </div>
       </section>
     </main>
+    <section class="pt-[100px] px-5 md:px-10 xl:px-[102px]">
+      <div class="relative before:absolute before:content-[''] before:w-[6px] before:h-[30px] before:bg-euphoria-voilet before:rounded-[10px] before:top-[6px]">
+        <p class="font-core text-euphoria-black text-[28px] font-semibold tracking-[1px] pl-5 ">Clothing for Women Online in India</p>
+      </div>
+      <div class="pl-5 font-causten">
+        <h1 class="text-euphoria-secondary-grey text-xl font-semibold font-core pt-[30px] ">Reexplore Women's Clothing Collection Online at Euphoria</h1>
+        <p class="text-euphoria-grey text-xl pt-[25px]">
+          Women's Clothing – Are you searching for the best website to buy Clothing for Women online in India? Well, your search for the coolest and most stylish womens clothing ends here. From trendy Casual Womens Wear Online shopping to premium quality cotton women's apparel, <span class="font-bold">Euphoria</span> has closet of Women Collection covered with the latest and best designs of Women's Clothing Online.
+        </p>
+        <p class="text-euphoria-grey text-xl pt-[20px]">
+          Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Womens Wear. 
+        </p>
+        <h1 class="text-euphoria-secondary-grey text-xl font-semibold font-core pt-[25px] ">One-Stop Destination to Shop Every Clothing for Women: Euphoria</h1>
+        <p class="text-euphoria-grey text-xl pt-[25px]">
+          Today, Clothing for Women is gaining more popularity above all. This is because gone are the days when women were used to carrying uncomfortable fashion. Today, a lady looks prettier when she is in Casual Womens Wear which is a comfortable outfit. Concerning this, <span class="font-bold">Euphoria</span> has a big fat range of Stylish Women's Clothing that would make her the winner wherever she goes. 
+        </p>
+        <p class="text-euphoria-grey text-xl pt-[20px]">
+          Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Womens Wear. It is quite evident to say that there are very few Womens Clothing online stores where you can buy Western Wear for Women comprising the premium material and elegant design that you are always seeking for. Basically, 
+        </p>
+        <p class="text-euphoria-grey text-xl pt-[20px]">
+          <span class="font-bold">See More</span>
+        </p>
+      </div>
+    </section>
+    <section class="pt-[100px] px-5 md:px-10 xl:px-[102px] mb-[100px]">
+      <div class="relative before:absolute before:content-[''] before:w-[6px] before:h-[30px] before:bg-euphoria-voilet before:rounded-[10px] before:top-[6px]">
+        <p class="font-core text-euphoria-black text-[28px] font-semibold tracking-[1px] pl-5  pb-5">Buy Women's Clothing at Best Price</p>
+        <div class="rounded-xl bg-euphoria-white-bg ml-5">
+          <table class="w-full text-xl">
+            <thead class="text-euphoria-black">
+              <tr>
+                <th class="border-b border-r border-border-color font-semibold text-left pl-[84px] sm:py-[50px] sm:px-[66px]">Women's Clothing</th>
+                <th class="border-b border-border-color w-[30%] font-semibold text-center">Best Price</th>
+              </tr>
+            </thead>
+            <tbody class="text-euphoria-grey">
+              <tr class="">
+                <td class="border-r border-border-color pl-[84px] pt-10">Pick Any 4- Womens Plain T-shirt Combo</td>
+                <td class="text-center pt-10">₹1099</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Pick Any 4- Plain Womens Boxer Combo</td>
+                <td class="text-center pt-10">₹1099</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Pick Any 4 - Women Plain Full Sleeve T-shirt Combo</td>
+                <td class="text-center pt-10">₹1399</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Multicolor Checkered Long Casual Shirts for Women</td>
+                <td class="text-center pt-10">₹499</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Pick Any 2: Plain Boxy Casual Shirts for Women Combo</td>
+                <td class="text-center pt-10">₹799</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Blue Floral Anarkali Kurti</td>
+                <td class="text-center pt-10">₹599</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Jade Black Narrow Cut Flexible Women Jeggings</td>
+                <td class="text-center pt-10">₹998</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Mustard-yellow Solid Straight-Fit Women Pant</td>
+                <td class="text-center pt-10">₹499</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Women Pants Combo - Pick Any 2</td>
+                <td class="text-center pt-10">₹800</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Pista Green Solid Boxy Casual Shirts for Women</td>
+                <td class="text-center pt-10">₹449</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] pt-10">Plain Burgundy Womens Boxer</td>
+                <td class="text-center pt-10">₹349</td>
+              </tr>
+              <tr>
+                <td class="border-r border-border-color pl-[84px] py-10">Striped Front Tie Casual Shirts for Women</td>
+                <td class="text-center py-10">₹449</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="px-5 md:px-10 lg:px-[186px] pt-20 xl:pt-[60px] bg-euphoria-black text-[#f6f6f6] font-causten">
+      <div class="sm:grid grid-cols-2 gap-y-14 xl:flex gap-x-[80px] md:px-14">
+        <div class="text-lg font-medium flex flex-col gap-y-2">
+          <h1 class="text-[29px] font-bold pb-6">Need Help</h1>
+          <p>Contact Us</p>
+          <p>Track Order</p>
+          <p>Returns & Refunds</p>
+          <p>FAQ's</p>
+          <p>Career</p>
+        </div>
+        <div class="text-lg font-medium flex flex-col gap-y-2">
+          <h1 class="text-[29px] font-bold pb-6">Company</h1>
+          <p>About Us</p>
+          <p>About Us</p>
+          <p>euphoriastan</p>
+          <p>Collaboration</p>
+          <p>Media</p>
+        </div>
+        <div class="text-lg font-medium flex flex-col gap-y-2">
+          <h1 class="text-[29px] font-bold pb-6">More Info</h1>
+          <p>Term and Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Shipping Policy</p>
+          <p>Sitemap</p>
+        </div>
+        <div class="text-lg font-medium flex flex-col gap-y-2">
+          <h1 class="text-[29px] font-bold pb-6">Location</h1>
+          <p>support@euphoria.in</p>
+          <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
+          <p>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p>
+        </div>
+      </div>
+      <div class="md:flex justify-between pb-[43px] pt-8 md:px-14">
+        <div class="flex gap-x-[10px] self-end ls:max-md:pb-8">
+          <div class="cursor-pointer"><img src="/assets/icons/Group 10.svg" alt="social-icon"></div>
+          <div class="cursor-pointer"><img src="/assets/icons/Group 11.svg" alt="social-icon"></div>
+          <div class="cursor-pointer"><img src="/assets/icons/Group 12.svg" alt="social-icon"></div>
+          <div class="bg-[#f6f6f6] rounded-[10.68px] w-[37px] h-[37px] text-[#2f2f2f] text-lg font-bold tracking-[1px] flex justify-center items-center cursor-pointer"><p>in</p></div>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="text-[29px] font-bold pb-6">Download The App </h1>
+          <div class="flex gap-x-8 pl-4">
+            <div class="flex gap-x-[10px] cursor-pointer">
+              <img src="/assets/icons/Group (3).svg" alt="logo">
+              <div>
+                <p class="text-[10px]">android app on</p>
+                <p class="text-lg">Google Play</p>
+              </div>
+            </div>
+            <div class="flex gap-x-[10px] cursor-pointer">
+              <img src="/assets/icons/Group (4).svg" alt="logo">
+              <div>
+                <p class="text-[10px]">Available on the</p>
+                <p class="text-lg">App Store</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center py-6 border-t border-b border-[#bebcbd] border-opacity-30">
+        <p class="text-[#f6f6f6] font-causten text-[29px] font-bold pl-14">Popular Categories</p>
+        <img class="pr-8" src="/assets/icons/Icon.svg" alt="icon">
+      </div>
+      <div class="text-white text-lg font-bold font-causten flex justify-center items-center pt-[37px] pb-[60px]"><p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p></div>
+    </footer>
     <script src="/main.js"></script>
 </body>
 </html>

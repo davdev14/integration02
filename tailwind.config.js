@@ -23,6 +23,7 @@ module.exports = {
       colors: {
         'euphoria-black': '#3C4242',
         'euphoria-grey': '#807D7E',
+        'euphoria-secondary-grey': '#8A8989',
         'euphoria-white-bg': '#F6F6F6',
         'euphoria-voilet': '#8A33FD',
         'euphoria-secondary-grey': '#7F7F7F',
