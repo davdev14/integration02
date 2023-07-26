@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/output.css">
+  <title>checkout</title>
+</head>
+<body>
+  <nav
+      class="flex items-center py-2 px-5 md:px-10 xl:px-[102px] lg:py-8 justify-between border-b border-border-color fixed top-0 w-full z-50 bg-white"
+    >
+      <div class="w-max cursor-pointer">
+        <p class="font-mintaka text-4xl text-euphoria-black">Euphoria</p>
+        <div class="relative top-[-8px]">
+          <div class="flex gap-x-2">
+            <img src="/assets/icons/Group.svg" alt="icon" />
+            <img src="/assets/icons/Group (1).svg" alt="icon" />
+          </div>
+          <img
+            class="float-right flex flex-col items-start pr-1"
+            src="/assets/icons/Group (2).svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="hidden lg:block">
+        <ul
+          class="font-causten text-euphoria-grey xl:text-[22px] font-medium flex gap-x-10"
+        >
+          <li class="font-bold text-euphoria-black cursor-pointer">Shop</li>
+          <li class="cursor-pointer">Men</li>
+          <li class="cursor-pointer">Women</li>
+          <li class="cursor-pointer">Combos</li>
+          <li class="cursor-pointer">Joggers</li>
+        </ul>
+      </div>
+      <div class="hidden lg:block">
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer 2xl:hidden"
+          src="/assets/icons/search.svg"
+          alt="icon"
+        />
+        <div
+          class="font-causten px-5 py-3 2xl:flex items-center bg-euphoria-white-bg gap-x-3 rounded-lg hidden"
+        >
+          <img src="/assets/icons/search.svg" alt="icon" />
+          <input
+            class="bg-euphoria-white-bg placeholder:text-euphoria-grey h-5 w-[175px] outline-none"
+            placeholder="Search"
+            type="search"
+          />
+        </div>
+      </div>
+
+      <div class="lg:flex gap-x-3 hidden">
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer"
+          src="/assets/icons/heart.svg"
+          alt="icon"
+        />
+        <img
+          class="p-3 rounded-lg bg-euphoria-white-bg cursor-pointer"
+          src="/assets/icons/user.svg"
+          alt="icon"
+        />
+        <img
+          class="p-3 rounded-lg bg-euphoria-voilet cursor-pointer"
+          src="/assets/icons/shopping cart (1).svg"
+          alt="icon"
+        />
+      </div>
+      <div class="hamburger lg:hidden">
+        <button>
+          <img class="menu-icon" src="/assets/icons/Menu.svg" alt="menu-icon" />
+        </button>
+      </div>
+      <div
+        class="menu bg-white translate-x-[100%] shadow-2xl fixed transition-transform duration-[0.2s] top-0 left-[30%] right-0 bottom-0 z-50"
+      >
+        <div class="close-icon flex justify-end p-8">
+          <img src="/assets/icons/Close.svg" alt="icon" />
+        </div>
+        <div>
+          <ul
+            class="font-causten text-euphoria-grey text-[22px] font-medium p-8 space-y-8"
+          >
+            <li class="font-bold text-euphoria-black cursor-pointer">Shop</li>
+            <li class="cursor-pointer">Men</li>
+            <li class="cursor-pointer">Women</li>
+            <li class="cursor-pointer">Combos</li>
+            <li class="cursor-pointer">Joggers</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<main class="mt-[66px] md:mt-[50px] lg:mt-[114px] font-causten text-euphoria-black">
+  <section
+  class="px-5 md:px-10 xl:px-[102px] flex flex-col gap-y-[30px] py-[50px]"
+>
+  <div class=" md:text-lg font-medium flex items-center gap-x-4">
+    <p class="text-euphoria-grey">Home</p>
+    <img src="/assets/icons/Icon (1).svg" alt="icon" />
+    <p class="text-euphoria-grey">My Account</p>
+    <img src="/assets/icons/Icon (1).svg" alt="icon" />
+    <p class="text-euphoria-black">Check Out</p>
+  </div>
+</section>
+<section class="px-5 md:px-10 xl:px-[102px] pb-[50px]">
+  <div
+  class="relative before:absolute before:content-[''] before:w-[6px] before:h-[30px] before:bg-euphoria-voilet before:rounded-[10px] before:top-[6px]"
+>
+  <p
+    class="font-core text-euphoria-black text-[28px] font-semibold tracking-[1px] pl-5"
+  >
+  Check Out
+  </p>
+  <p class="pt-5 text-[22px] font-semibold ">Billing Details</p>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-[auto_450px] gap-y-8">
+  <div class="pt-[50px] space-y-[28px]">
+    <div class="md:flex items-baseline gap-x-[38px] space-y-4">
+      <div class="flex flex-col justify-start w-full">
+        <label for="firstName" class="font-semibold">First Name*</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="First Name" id="firstName">
+      </div>
+      <div class="flex flex-col justify-start w-full">
+        <label for="lastName" class="font-semibold">Last Name*</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="Last Name" id="lastName">
+      </div>
+    </div>
+    <div class="md:flex items-baseline gap-x-[38px] space-y-4">
+      <div class="flex flex-col justify-start w-full">
+        <label for="location" class="font-semibold">Country / Region*</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="Country / Region" id="location">
+      </div>
+      <div class="flex flex-col justify-start w-full">
+        <label for="company" class="font-semibold">Company Name</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="Company (optional)" id="company">
+      </div>
+    </div>
+    <div class="md:flex items-baseline gap-x-[38px] space-y-4">
+      <div class="flex flex-col justify-start w-full">
+        <label for="street" class="font-semibold">Street Address*</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="House number and street name" id="street">
+      </div>
+      <div class="flex flex-col justify-start w-full">
+        <label for="apt" class="font-semibold">Apt, suite, unit</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="apartment, suite, unit, etc. (optional)" id="apt">
+      </div>
+    </div>
+    <div class="md:flex items-end gap-x-[38px] space-y-4">
+      <div class="flex flex-col justify-start w-full">
+        <label for="town" class="font-semibold">City*</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="Town / City" id="town">
+      </div>
+      <div class="flex flex-col justify-start w-full">
+        <label for="State" class="font-semibold"></label>State*</label>
+        <select name="State" id="State" class="rounded-lg px-5 py-3 bg-euphoria-white-bg">
+          <option value="State">State</option>
+        </select>
+      </div>
+      <div class="flex flex-col justify-start w-full">
+        <label for="lastName" class="font-semibold">Postal Code*</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="Postal Code" id="lastName">
+      </div>
+    </div>
+    <div class="md:flex gap-x-[38px] space-y-4">
+      <div class="flex flex-col justify-start md:w-1/2">
+        <label for="phone" class="font-semibold">Phone*</label>
+        <input class="rounded-lg px-5 py-2 bg-euphoria-white-bg" type="text" placeholder="Phone" id="phone">
+      </div>
+    </div>
+    <div class="mt-4">
+      <button class="text-white bg-euphoria-voilet text-lg font-medium py-4 px-5 rounded-lg ">Continue to delivery</button>
+    </div>
+    <div class="flex gap-x-2 border-b border-border-color pb-8">
+      <input class="accent-euphoria-voilet" type="checkbox">
+      <p class="text-lg">Save my information for a faster checkout</p>
+    </div>
+    <div class="border-b border-border-color pb-[30px]">
+    <div>
+      <p class="pt-5 text-[22px] font-semibold ">Shipping Address</p>
+      <p>Select the address that matches your card or payment method.</p>
+    </div>
+    <div class="bg-euphoria-white-bg rounded-xl mt-[30px]">
+      <div class="py-8 pl-7 sm:pr-12">
+        <div class="flex gap-x-4 border-b border-border-color pb-6">
+          <input class="accent-euphoria-black" type="radio">
+          <p class="text-xl font-bold">Same as Billing address</p>
+        </div>
+        <div class="flex gap-x-4 pt-6">
+          <input class="accent-euphoria-black" type="radio">
+          <p class="text-xl font-bold">Use a different shipping address</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="border-b border-border-color pb-[30px]">
+    <div>
+      <p class="pt-5 text-[22px] font-semibold ">Shipping Method</p>
+    </div>
+    <div class="bg-euphoria-white-bg rounded-xl mt-[30px]">
+      <div class="py-8 pl-7 sm:pr-12">
+        <div class="border-b border-border-color pb-6">
+          <p class="text-xl font-bold">Arrives by Monday, June 7</p>
+        </div>
+        <div class="flex justify-between items-center pt-6">
+          <div>
+            <p class="text-xl font-bold">Delivery Charges</p>
+            <p class="text-euphoria-black font-medium">Additional fess may apply</p>
+          </div>
+          <p class="text-xl font-bold">$5.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-b border-border-color pb-[30px]">
+    <div>
+      <p class="pt-5 text-[22px] font-semibold ">Payment Method</p>
+      <p>All transactions are secure and encrypted.</p>
+    </div>
+    <div class="bg-euphoria-white-bg rounded-xl mt-[30px]">
+      <div class="py-8 pl-2 md:pl-7 sm:pr-12">
+        <div class="flex flex-col border-b border-border-color pb-6">
+          <div class="flex gap-x-4">
+            <input class="accent-euphoria-black" type="radio">
+            <div>
+              <p class="text-xl font-bold">Credit Card</p>
+              <p class="text-euphoria-black font-medium">We accept all major credit cards.</p>
+            </div>
+          </div>
+          <div class="pt-[30px] pl-6 grid grid-cols-2 md:flex gap-y-5 gap-x-5">
+            <img src="/assets/icons/Frame 440.svg" alt="logo">
+            <img src="/assets/icons/Frame 441.svg" alt="logo">
+            <img src="/assets/icons/Frame 442.svg" alt="logo">
+            <img src="/assets/icons/Frame 443.svg" alt="logo">
+          </div>
+          <div class="pt-[30px] md:pl-6 grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-[26px]">
+            <input placeholder="Card number" type="text" class="px-5 py-2 rounded-lg border border-euphoria-black bg-transparent outline-none">
+            <input placeholder="Name of card" type="text" class="px-5 py-2 rounded-lg border border-euphoria-black bg-transparent outline-none">
+            <input placeholder="Expiration date (MM/YY)" type="text" class="px-5 py-2 rounded-lg border border-euphoria-black bg-transparent outline-none">
+            <div class="px-5 py-2 rounded-lg border border-euphoria-black bg-transparent flex justify-between">
+              <input placeholder="Security Code" type="text" class="bg-transparent outline-none">
+              <img src="/assets/icons/eye.svg" alt="icon">
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-x-4 pt-6 border-b border-border-color pb-6">
+          <div class="flex gap-x-4">
+            <input class="accent-euphoria-black" type="radio">
+            <div>
+              <p class="text-xl font-bold">Cash on delivery</p>
+              <p class="text-euphoria-black font-medium">Pay with cash upon delivery.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-x-4 pt-6">
+          <input class="accent-euphoria-black" type="radio">
+          <div>
+            <p class="text-xl font-bold">Paypal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="border border-border-color euphoria-shadow py-[40px] xl:justify-self-end px-[22px] xl:w-[400px] h-fit">
+    <h1 class="font-core text-2xl font-semibold pb-4 border-b border-border-color">Order Summary</h1>
+    <div class="py-4 border-b border-border-color flex justify-between items-center">
+      <div class="flex items-center gap-x-4">
+      <img src="/assets/images/products/Rectangle 741.png" alt="image">
+      <div>
+        <p class="text-sm font-bold">Blue Flower Print Crop Top <span class="text-euphoria-grey">x 1</span></p>
+        <p class="text-sm font-bold">Color <span class="text-euphoria-grey">: Yellow</span></p>
+      </div>
+      </div>
+      <p class="text-euphoria-grey font-bold text-sm">$29.00</p>
+    </div>
+    <div class="py-4 border-b border-border-color flex justify-between items-center">
+      <div class="flex items-center gap-x-4">
+      <img src="/assets/images/products/Rectangle 741 (1).png" alt="image">
+      <div>
+        <p class="text-sm font-bold">Levender Hoodie <span class="text-euphoria-grey">x 2</span></p>
+        <p class="text-sm font-bold">Color <span class="text-euphoria-grey">: Levender</span></p>
+      </div>
+      </div>
+      <p class="text-euphoria-grey font-bold text-sm">$119.00</p>
+    </div>
+    <div class="py-4 border-b border-border-color flex justify-between items-center">
+      <div class="flex items-center gap-x-4">
+      <img src="/assets/images/products/Rectangle 741 (2).png" alt="image">
+      <div>
+        <p class="text-sm font-bold">Black Sweatshirt <span class="text-euphoria-grey">x 2</span></p>
+        <p class="text-sm font-bold">Color <span class="text-euphoria-grey">: Black</span></p>
+      </div>
+      </div>
+      <p class="text-euphoria-grey font-bold text-sm">$123.00</p>
+    </div>
+    <div class="border-b border-border-color py-4">
+      <div class="flex items-center justify-between pb-4">
+        <p class="text-lg font-bold">Subtotal <span class="text-euphoria-grey font-medium">( 3 items )</span></p>
+        <p class="text-lg font-bold">$513.00</p>
+      </div>
+      <div class="flex items-center justify-between">
+        <p class="text-lg font-bold">Savings</p>
+        <p class="text-lg font-bold">-$30.00</p>
+      </div>
+    </div>
+    <div class="border-b border-border-color py-4">
+      <div class="flex items-center justify-between">
+        <p class="text-lg font-bold">Shipping</p>
+        <p class="text-lg font-bold">-$5.00</p>
+      </div>
+    </div>
+    <div class="pt-5">
+      <div class="flex items-center justify-between">
+        <p class="text-lg font-bold">Total</p>
+        <p class="text-lg font-bold">$478.00</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mt-4">
+  <button class="text-white bg-euphoria-voilet text-lg font-medium py-2 xl:py-4 px-5 rounded-lg ">Pay Now</button>
+</div>
+</section>
+</main>
+<footer class="px-5 md:px-10 lg:px-[102px] pt-20 xl:pt-[60px] bg-euphoria-black text-[#f6f6f6] font-causten mt-[100px]">
+  <div class="sm:grid grid-cols-2 gap-y-14 xl:flex gap-x-[80px]">
+    <div class="text-lg font-medium flex flex-col gap-y-2">
+      <h1 class="text-[29px] font-bold pb-6">Need Help</h1>
+      <p>Contact Us</p>
+      <p>Track Order</p>
+      <p>Returns & Refunds</p>
+      <p>FAQ's</p>
+      <p>Career</p>
+    </div>
+    <div class="text-lg font-medium flex flex-col gap-y-2">
+      <h1 class="text-[29px] font-bold pb-6">Company</h1>
+      <p>About Us</p>
+      <p>About Us</p>
+      <p>euphoriastan</p>
+      <p>Collaboration</p>
+      <p>Media</p>
+    </div>
+    <div class="text-lg font-medium flex flex-col gap-y-2">
+      <h1 class="text-[29px] font-bold pb-6">More Info</h1>
+      <p>Term and Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Shipping Policy</p>
+      <p>Sitemap</p>
+    </div>
+    <div class="text-lg font-medium flex flex-col gap-y-2">
+      <h1 class="text-[29px] font-bold pb-6">Location</h1>
+      <p>support@euphoria.in</p>
+      <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
+      <p>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p>
+    </div>
+  </div>
+  <div class="md:flex justify-between pb-[43px] pt-8 md:px-14">
+    <div class="flex gap-x-[10px] self-end ls:max-md:pb-8">
+      <div class="cursor-pointer"><img src="/assets/icons/Group 10.svg" alt="social-icon"></div>
+      <div class="cursor-pointer"><img src="/assets/icons/Group 11.svg" alt="social-icon"></div>
+      <div class="cursor-pointer"><img src="/assets/icons/Group 12.svg" alt="social-icon"></div>
+      <div class="bg-[#f6f6f6] rounded-[10.68px] w-[37px] h-[37px] text-[#2f2f2f] text-lg font-bold tracking-[1px] flex justify-center items-center cursor-pointer"><p>in</p></div>
+    </div>
+    <div class="flex flex-col">
+      <h1 class="text-[29px] font-bold pb-6">Download The App </h1>
+      <div class="flex gap-x-8 pl-4">
+        <div class="flex gap-x-[10px] cursor-pointer">
+          <img src="/assets/icons/Group (3).svg" alt="logo">
+          <div>
+            <p class="text-[10px]">android app on</p>
+            <p class="text-lg">Google Play</p>
+          </div>
+        </div>
+        <div class="flex gap-x-[10px] cursor-pointer">
+          <img src="/assets/icons/Group (4).svg" alt="logo">
+          <div>
+            <p class="text-[10px]">Available on the</p>
+            <p class="text-lg">App Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-between items-center py-6 border-t border-b border-[#bebcbd] border-opacity-30">
+    <p class="text-[#f6f6f6] font-causten text-[29px] font-bold pl-14">Popular Categories</p>
+    <img class="pr-8" src="/assets/icons/Icon.svg" alt="icon">
+  </div>
+  <div class="text-white text-lg font-bold font-causten flex justify-center items-center pt-[37px] pb-[60px]"><p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p></div>
+</footer>
+<script src="/main.js"></script>
+</body>
+</html>
