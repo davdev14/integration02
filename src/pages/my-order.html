@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <title>contact</title>
+    <title>my order</title>
   </head>
   <body>
     <nav
@@ -107,7 +107,7 @@
               <img src="/assets/icons/Icon (1).svg" alt="icon" />
               <p class="text-euphoria-grey">My Account</p>
               <img src="/assets/icons/Icon (1).svg" alt="icon" />
-              <p class="text-euphoria-black">Personal Info</p>
+              <p class="text-euphoria-black">My Orders</p>
             </div>
           </div>
           <div
@@ -123,7 +123,7 @@
             </p>
           </div>
           <div class="pt-10 flex flex-col gap-y-[30px]">
-            <div class="flex items-center gap-x-2 pl-5 cursor-pointer">
+            <div class="flex items-center gap-x-2 bg-euphoria-white-bg border-l-2 border-euphoria-black pl-5 py-2 rounded-r-lg cursor-pointer">
               <img src="/assets/icons/my orders.svg" alt="icon" />
               <p class="text-lg font-semibold">My orders</p>
             </div>
@@ -132,7 +132,7 @@
               <p class="text-lg font-semibold">Wishlist</p>
             </div>
             <div
-              class="flex items-center gap-x-2 bg-euphoria-white-bg border-l-2 border-euphoria-black pl-5 py-2 rounded-r-lg cursor-pointer"
+            class="flex items-center gap-x-2 pl-5 cursor-pointer"
             >
               <img src="/assets/icons/user (1).svg" alt="icon" />
               <p class="text-lg font-semibold">My info</p>
@@ -143,9 +143,173 @@
             </div>
           </div>
         </div>
-        <div>
-
+        <div class="pt-[97px]">
+          <h1 class="text-[28px] font-core font-semibold">My Orders</h1>
+          <div class="flex items-center justify-between mt-[38px] border-b border-border-color">
+            <p class="text-[22px] font-medium font-core bg-euphoria-white-bg py-4 px-8 rounded-tr-xl rounded-tl-xl border-b-4 border-euphoria-black">Active</p>
+            <p class="text-[22px] font-medium font-core hidden md:block">Cancelled</p>
+            <p class="text-[22px] font-medium font-core hidden md:block">Completed</p>
           </div>
+          <div class="flex flex-col gap-y-[30px]">
+          <div class="mt-[50px] bg-euphoria-white-bg rounded-lg py-7 px-[47px]">
+            <h1 class="text-xl font-semibold">Order no: #123456789</h1>
+            <div class="pt-[14px] flex flex-col md:flex-row gap-y-4 md:items-center md:justify-between">
+              <div class="text-sm">
+                <p class="text-euphoria-grey font-semibold">
+                  Order Date : <span class="text-border-color">2 June 2023 2:40 PM</span> 
+                </p>
+                <p class="text-euphoria-grey font-semibold pt-2">
+                  Estimated Delivery Date : <span class="text-border-color">8 June 2023</span> 
+                </p>
+              </div>
+              <div class="text-sm">
+                <p class="text-euphoria-grey font-semibold">
+                  Order Status : <span class="text-border-color">Inprogress</span> 
+                </p>
+                <p class="text-euphoria-grey font-semibold pt-2">
+                  Payment Method : <span class="text-border-color">Cash on delivery</span> 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+          class="py-[30px] border-b border-border-color border-opacity-30 flex flex-col md:flex-row md:justify-between md:items-center text-[14px] gap-y-8"
+        >
+          <div class="flex items-center gap-x-4">
+            <div class="flex items-center gap-x-4 lg:gap-x-[25px]">
+              <img
+                class="w-[100px] h-[100px]"
+                src="/assets/images/products/Rectangle 755.png"
+                alt="image"
+              />
+              <div class="space-y-1">
+                <p class="font-semibold text-base">Black Printed T-shirt</p>
+                <p class="font-semibold">
+                  Color :<span class="text-euphoria-grey"> Pink</span>
+                </p>
+                <p class="font-semibold">
+                  Qty :<span class="text-euphoria-grey"> 1</span>
+                </p>
+                <p class="font-semibold text-euphoria-grey">
+                  Total : $23.00
+                </p>
+              </div>
+            </div>
+          </div>
+            <button
+              class="bg-euphoria-voilet text-white px-5 py-2 rounded-lg text-lg font-medium w-fit"
+            >
+            View Detail
+            </button>
+        </div>
+          </div>
+          <div class="flex flex-col gap-y-[30px]">
+            <div class="mt-[50px] bg-euphoria-white-bg rounded-lg py-7 px-[47px]">
+              <h1 class="text-xl font-semibold">Order no: #123456789</h1>
+              <div class="pt-[14px] flex flex-col md:flex-row gap-y-4 md:items-center md:justify-between">
+                <div class="text-sm">
+                  <p class="text-euphoria-grey font-semibold">
+                    Order Date : <span class="text-border-color">2 June 2023 2:40 PM</span> 
+                  </p>
+                  <p class="text-euphoria-grey font-semibold pt-2">
+                    Estimated Delivery Date : <span class="text-border-color">8 June 2023</span> 
+                  </p>
+                </div>
+                <div class="text-sm">
+                  <p class="text-euphoria-grey font-semibold">
+                    Order Status : <span class="text-border-color">Shipped</span> 
+                  </p>
+                  <p class="text-euphoria-grey font-semibold pt-2">
+                    Payment Method : <span class="text-border-color">Cash on delivery</span> 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+            class="py-[30px] border-b border-border-color border-opacity-30 flex flex-col md:flex-row md:justify-between md:items-center text-[14px] gap-y-8"
+          >
+            <div class="flex items-center gap-x-4">
+              <div class="flex items-center gap-x-4 lg:gap-x-[25px]">
+                <img
+                  class="w-[100px] h-[100px]"
+                  src="/assets/images/products/Rectangle 755 (1).png"
+                  alt="image"
+                />
+                <div class="space-y-1">
+                  <p class="font-semibold text-base">Printed blue & white Cote </p>
+                  <p class="font-semibold">
+                    Color :<span class="text-euphoria-grey"> White</span>
+                  </p>
+                  <p class="font-semibold">
+                    Qty :<span class="text-euphoria-grey"> 1</span>
+                  </p>
+                  <p class="font-semibold text-euphoria-grey">
+                    Total : $143.00
+                  </p>
+                </div>
+              </div>
+            </div>
+              <button
+                class="bg-euphoria-voilet text-white px-5 py-2 rounded-lg text-lg font-medium w-fit"
+              >
+              View Detail
+              </button>
+          </div>
+            </div>
+            <div class="flex flex-col gap-y-[30px]">
+              <div class="mt-[50px] bg-euphoria-white-bg rounded-lg py-7 px-[47px]">
+                <h1 class="text-xl font-semibold">Order no: #123456789</h1>
+                <div class="pt-[14px] flex flex-col md:flex-row gap-y-4 md:items-center md:justify-between">
+                  <div class="text-sm">
+                    <p class="text-euphoria-grey font-semibold">
+                      Order Date : <span class="text-border-color">2 June 2023 2:40 PM</span> 
+                    </p>
+                    <p class="text-euphoria-grey font-semibold pt-2">
+                      Estimated Delivery Date : <span class="text-border-color">8 June 2023</span> 
+                    </p>
+                  </div>
+                  <div class="text-sm">
+                    <p class="text-euphoria-grey font-semibold">
+                      Order Status : <span class="text-border-color">Inprogress</span> 
+                    </p>
+                    <p class="text-euphoria-grey font-semibold pt-2">
+                      Payment Method : <span class="text-border-color">Cash on delivery</span> 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+              class="py-[30px] border-b border-border-color border-opacity-30 flex flex-col md:flex-row md:justify-between md:items-center text-[14px] gap-y-8"
+            >
+              <div class="flex items-center gap-x-4">
+                <div class="flex items-center gap-x-4 lg:gap-x-[25px]">
+                  <img
+                    class="w-[100px] h-[100px]"
+                    src="/assets/images/products/Rectangle 755 (2).png"
+                    alt="image"
+                  />
+                  <div class="space-y-1">
+                    <p class="font-semibold text-base">Blue Shirt</p>
+                    <p class="font-semibold">
+                      Color :<span class="text-euphoria-grey"> Blue</span>
+                    </p>
+                    <p class="font-semibold">
+                      Qty :<span class="text-euphoria-grey"> 1</span>
+                    </p>
+                    <p class="font-semibold text-euphoria-grey">
+                      Total : $93.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+                <button
+                  class="bg-euphoria-voilet text-white px-5 py-2 rounded-lg text-lg font-medium w-fit"
+                >
+                View Detail
+                </button>
+            </div>
+              </div>
+        </div>
       </section>
     </main>
     <footer
