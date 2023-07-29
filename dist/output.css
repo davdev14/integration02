@@ -1686,6 +1686,11 @@ video {
   padding-bottom: 78px;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1944,6 +1949,10 @@ video {
 
 .pt-\[9px\] {
   padding-top: 9px;
+}
+
+.pr-0 {
+  padding-right: 0px;
 }
 
 .text-left {
@@ -2492,6 +2501,11 @@ input[type="range"]::-moz-range-thumb {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .ls\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .ls\:pt-\[25px\] {
     padding-top: 25px;
   }
@@ -2750,6 +2764,10 @@ input[type="range"]::-moz-range-thumb {
     padding-top: 67px;
   }
 
+  .md\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2784,6 +2802,11 @@ input[type="range"]::-moz-range-thumb {
 
     .md\:max-lg\:gap-y-20 {
       row-gap: 5rem;
+    }
+
+    .md\:max-lg\:px-10 {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
   }
 }
@@ -2867,6 +2890,11 @@ input[type="range"]::-moz-range-thumb {
     padding-bottom: 2rem;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:pb-\[45px\] {
     padding-bottom: 45px;
   }
@@ -2885,6 +2913,10 @@ input[type="range"]::-moz-range-thumb {
 
   .lg\:pt-\[100px\] {
     padding-top: 100px;
+  }
+
+  .lg\:pr-0 {
+    padding-right: 0px;
   }
 
   .lg\:text-\[32px\] {
@@ -3034,6 +3066,10 @@ input[type="range"]::-moz-range-thumb {
 
   .xl\:pt-\[60px\] {
     padding-top: 60px;
+  }
+
+  .xl\:pr-0 {
+    padding-right: 0px;
   }
 
   .xl\:text-\[22px\] {
