@@ -655,10 +655,6 @@ video {
   margin-top: 100px;
 }
 
-.mt-\[114px\] {
-  margin-top: 114px;
-}
-
 .mt-\[130px\] {
   margin-top: 130px;
 }
@@ -693,6 +689,10 @@ video {
 
 .mt-\[50px\] {
   margin-top: 50px;
+}
+
+.mt-\[64px\] {
+  margin-top: 64px;
 }
 
 .mt-\[66px\] {
@@ -808,18 +808,6 @@ video {
   height: 100%;
 }
 
-.h-\[128vh\] {
-  height: 128vh;
-}
-
-.max-h-screen {
-  max-height: 100vh;
-}
-
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-9 {
   width: 2.25rem;
 }
@@ -922,62 +910,6 @@ video {
   width: 100vw;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[80px\] {
-  width: 80px;
-}
-
-.w-\[70px\] {
-  width: 70px;
-}
-
-.w-\[128vh\] {
-  width: 128vh;
-}
-
-.w-\[81\%\] {
-  width: 81%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
-}
-
-.w-\[84\%\] {
-  width: 84%;
-}
-
-.w-\[82\%\] {
-  width: 82%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
-}
-
-.w-\[78\%\] {
-  width: 78%;
-}
-
-.w-\[79\%\] {
-  width: 79%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .max-w-\[414px\] {
   max-width: 414px;
 }
@@ -1018,10 +950,6 @@ video {
 
 .grid-cols-\[320px_auto\] {
   grid-template-columns: 320px auto;
-}
-
-.grid-cols-\[auto_450px\] {
-  grid-template-columns: auto 450px;
 }
 
 .flex-col {
@@ -1668,6 +1596,11 @@ video {
   padding-right: 48px;
 }
 
+.px-\[49px\] {
+  padding-left: 49px;
+  padding-right: 49px;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1751,11 +1684,6 @@ video {
 .py-\[78px\] {
   padding-top: 78px;
   padding-bottom: 78px;
-}
-
-.px-\[49px\] {
-  padding-left: 49px;
-  padding-right: 49px;
 }
 
 .pb-4 {
@@ -2016,10 +1944,6 @@ video {
 
 .pt-\[9px\] {
   padding-top: 9px;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
 }
 
 .text-left {
@@ -2621,16 +2545,6 @@ input[type="range"]::-moz-range-thumb {
     padding-right: 1.25rem;
   }
 
-  .sm\:py-\[20px\] {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .sm\:py-\[40px\] {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .sm\:pr-12 {
     padding-right: 3rem;
   }
@@ -2664,6 +2578,10 @@ input[type="range"]::-moz-range-thumb {
 
   .md\:mt-\[50px\] {
     margin-top: 50px;
+  }
+
+  .md\:mt-\[64px\] {
+    margin-top: 64px;
   }
 
   .md\:block {
@@ -2792,10 +2710,6 @@ input[type="range"]::-moz-range-thumb {
     padding-bottom: 50px;
   }
 
-  .md\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
   .md\:pl-12 {
     padding-left: 3rem;
   }
@@ -2908,10 +2822,6 @@ input[type="range"]::-moz-range-thumb {
     width: 200px;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2950,11 +2860,6 @@ input[type="range"]::-moz-range-thumb {
   .lg\:px-\[102px\] {
     padding-left: 102px;
     padding-right: 102px;
-  }
-
-  .lg\:px-\[186px\] {
-    padding-left: 186px;
-    padding-right: 186px;
   }
 
   .lg\:py-8 {
@@ -3036,22 +2941,6 @@ input[type="range"]::-moz-range-thumb {
     width: 420px;
   }
 
-  .xl\:w-1\/2 {
-    width: 50%;
-  }
-
-  .xl\:w-\[90\%\] {
-    width: 90%;
-  }
-
-  .xl\:w-\[92\%\] {
-    width: 92%;
-  }
-
-  .xl\:w-\[95\%\] {
-    width: 95%;
-  }
-
   .xl\:w-\[94\%\] {
     width: 94%;
   }
@@ -3068,30 +2957,6 @@ input[type="range"]::-moz-range-thumb {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .xl\:grid-cols-\[auto_450px\] {
-    grid-template-columns: auto 450px;
-  }
-
-  .xl\:grid-cols-\[auto_500px\] {
-    grid-template-columns: auto 500px;
-  }
-
-  .xl\:grid-cols-\[80\%_20\%\] {
-    grid-template-columns: 80% 20%;
-  }
-
-  .xl\:grid-cols-\[50\%_20\%\] {
-    grid-template-columns: 50% 20%;
-  }
-
-  .xl\:grid-cols-\[70\%_20\%\] {
-    grid-template-columns: 70% 20%;
-  }
-
-  .xl\:grid-cols-\[70\%_30\%\] {
-    grid-template-columns: 70% 30%;
-  }
-
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -3103,10 +2968,6 @@ input[type="range"]::-moz-range-thumb {
   .xl\:gap-x-6 {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
-  }
-
-  .xl\:justify-self-start {
-    justify-self: start;
   }
 
   .xl\:justify-self-end {
@@ -3175,14 +3036,6 @@ input[type="range"]::-moz-range-thumb {
     padding-top: 60px;
   }
 
-  .xl\:pl-\[74px\] {
-    padding-left: 74px;
-  }
-
-  .xl\:pr-0 {
-    padding-right: 0px;
-  }
-
   .xl\:text-\[22px\] {
     font-size: 22px;
   }
@@ -3213,14 +3066,6 @@ input[type="range"]::-moz-range-thumb {
 
   .\32xl\:hidden {
     display: none;
-  }
-
-  .\32xl\:w-\[79\%\] {
-    width: 79%;
-  }
-
-  .\32xl\:w-\[78\%\] {
-    width: 78%;
   }
 
   .\32xl\:w-\[78\.5\%\] {
