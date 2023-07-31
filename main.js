@@ -80,4 +80,9 @@ window.addEventListener("resize", () => {
   initSwiper();
 });
 
-
+// const swiperBullet = new Swiper('.swiper-pagination2', {
+//   //...
+//   renderBullet: function (index, className) {
+//     return '<span class="' + className + '">' + (index + 1) + '</span>';
+//   }
+// });

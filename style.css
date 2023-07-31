@@ -11,7 +11,7 @@
 }
 @font-face {
   font-family: core;
-  src: url("/fonts/Core\ Sans_fonts/") format("opentype");
+  src: url("/fonts/core-sans-c/CoreSansC-45Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: montserrat;
@@ -45,9 +45,11 @@ html,body {
   height: 100%;
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: center center;
 }
 
+.swiper-pagination-bullet{
+  border-radius: 5px;
+}
 
 .hero-image {
   background-image: url(/assets/images/shop-hero-1-product-slide-1@2x.png);
@@ -147,4 +149,42 @@ input[type="range"]::-moz-range-thumb {
 }
 .euphoria-shadow{
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05), -2px -2px 4px 0px rgba(0, 0, 0, 0.05)
+}
+.pulsing-image-hover-effect div {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.pulsing-image-hover-effect div::before{
+  transition: all .5s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  transform: scale(0);
+}
+.pulsing-image-hover-effect div:hover::before{
+  opacity: .5;
+  transform: scale(1);
+}
+.pulsing-image-hover-effect div::after{
+  transition: all .6s ease .2s;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  bottom: 8px;
+  right: 8px;
+  border: 1px solid #aaa;
+  background-color: #000;
+  opacity: 0;
+  transform: scale(0);
+}
+.pulsing-image-hover-effect div:hover::after{
+  opacity: .35;
+  transform: scale(1);
 }
