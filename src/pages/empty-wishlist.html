@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav
-      class="flex items-center py-2 px-5 md:px-10 xl:px-[102px] lg:py-8 justify-between border-b border-border-color fixed top-0 w-full z-50 bg-white"
+      class="flex items-center py-2 lg:py-4 px-5 md:px-10 lg:px-[102px] justify-between fixed top-0 w-full z-50 bg-white"
     >
       <div class="w-max cursor-pointer">
         <p class="font-mintaka text-4xl text-euphoria-black">Euphoria</p>
@@ -26,13 +26,13 @@
       </div>
       <div class="hidden lg:block">
         <ul
-          class="font-causten text-euphoria-grey xl:text-[22px] font-medium flex gap-x-10"
+          class="font-causten text-euphoria-grey xl:text-[22px] font-medium flex gap-x-5"
         >
-          <li class="cursor-pointer">Shop</li>
-          <li class="cursor-pointer">Men</li>
-          <li class="cursor-pointer">Women</li>
-          <li class="cursor-pointer">Combos</li>
-          <li class="cursor-pointer">Joggers</li>
+          <li class="cursor-pointer px-3 hover:bg-euphoria-white-bg hover:rounded-lg">Shop</li>
+          <li class="cursor-pointer px-3 hover:bg-euphoria-white-bg hover:rounded-lg">Men</li>
+          <li class="cursor-pointer px-3 hover:bg-euphoria-white-bg hover:rounded-lg">Women</li>
+          <li class="cursor-pointer px-3 hover:bg-euphoria-white-bg hover:rounded-lg">Combos</li>
+          <li class="cursor-pointer px-3 hover:bg-euphoria-white-bg hover:rounded-lg">Joggers</li>
         </ul>
       </div>
       <div class="hidden lg:block">
@@ -72,7 +72,11 @@
       </div>
       <div class="hamburger lg:hidden">
         <button>
-          <img class="menu-icon" src="/assets/icons/Menu.svg" alt="menu-icon" />
+          <img
+            class="menu-icon"
+            src="/assets/icons/Menu.svg"
+            alt="menu-icon"
+          />
         </button>
       </div>
       <div
@@ -95,7 +99,7 @@
       </div>
     </nav>
     <main
-      class="mt-[66px] md:mt-[50px] lg:mt-[114px] font-causten text-euphoria-black"
+      class="mt-[65px] lg:mt-[81px] font-causten text-euphoria-black"
     >
       <section
         class="lg:grid grid-cols-[320px_auto] gap-x-[50px] px-5 md:px-10 xl:px-[102px]"
@@ -150,7 +154,7 @@
                 <img src="/assets/icons/heart-green.svg" alt="icon">
               </div>
               <p class="font-core text-xl md:text-[34px] font-semibold pt-[60px]">Your wishlist is empty.</p>
-              <p class="text-center max-w-[435px] pt-[10px]">
+              <p class="text-center max-w-[435px] pt-[10px] px-5 lg:px-0">
                 You don’t have any products in the wishlist yet. You will find a lot
                 of interesting products on our Shop page.
               </p>
@@ -217,10 +221,8 @@
         </div>
       </section>
     </main>
-    <footer
-      class="px-5 md:px-10 lg:px-[102px] pt-20 xl:pt-[60px] bg-euphoria-black text-[#f6f6f6] font-causten mt-[100px]"
-    >
-      <div class="sm:grid grid-cols-2 gap-y-14 xl:flex gap-x-[80px]">
+    <footer class="px-10 lg:px-[102px] pt-20 xl:pt-[60px] bg-euphoria-black text-[#f6f6f6] font-causten mt-[100px]">
+      <div class="md:grid grid-cols-2 gap-y-14 xl:flex gap-x-[80px] space-y-10 md:space-y-0">
         <div class="text-lg font-medium flex flex-col gap-y-2">
           <h1 class="text-[29px] font-bold pb-6">Need Help</h1>
           <p>Contact Us</p>
@@ -251,56 +253,38 @@
           <p>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p>
         </div>
       </div>
-      <div class="md:flex justify-between pb-[43px] pt-8 md:px-14">
+      <div class="md:flex justify-between pb-[43px] pt-8">
         <div class="flex gap-x-[10px] self-end ls:max-md:pb-8">
-          <div class="cursor-pointer">
-            <img src="/assets/icons/Group 10.svg" alt="social-icon" />
-          </div>
-          <div class="cursor-pointer">
-            <img src="/assets/icons/Group 11.svg" alt="social-icon" />
-          </div>
-          <div class="cursor-pointer">
-            <img src="/assets/icons/Group 12.svg" alt="social-icon" />
-          </div>
-          <div
-            class="bg-[#f6f6f6] rounded-[10.68px] w-[37px] h-[37px] text-[#2f2f2f] text-lg font-bold tracking-[1px] flex justify-center items-center cursor-pointer"
-          >
-            <p>in</p>
-          </div>
+          <div class="cursor-pointer"><img src="/assets/icons/Group 10.svg" alt="social-icon"></div>
+          <div class="cursor-pointer"><img src="/assets/icons/Group 11.svg" alt="social-icon"></div>
+          <div class="cursor-pointer"><img src="/assets/icons/Group 12.svg" alt="social-icon"></div>
+          <div class="bg-[#f6f6f6] rounded-[10.68px] w-[37px] h-[37px] text-[#2f2f2f] text-lg font-bold tracking-[1px] flex justify-center items-center cursor-pointer"><p>in</p></div>
         </div>
-        <div class="flex flex-col">
-          <h1 class="text-[29px] font-bold pb-6">Download The App</h1>
-          <div class="flex gap-x-8 pl-4">
+        <div class="flex flex-col xl:pr-[130px]">
+          <h1 class="text-[29px] font-bold pb-6">Download The App </h1>
+          <div class="flex gap-x-8 sm:pl-4">
             <div class="flex gap-x-[10px] cursor-pointer">
-              <img src="/assets/icons/Group (3).svg" alt="logo" />
+              <img class="w-[25px]" src="/assets/icons/Group (3).svg" alt="logo">
               <div>
                 <p class="text-[10px]">android app on</p>
-                <p class="text-lg">Google Play</p>
+                <p class="text-[10px] sm:text-sm md:text-lg">Google Play</p>
               </div>
             </div>
             <div class="flex gap-x-[10px] cursor-pointer">
-              <img src="/assets/icons/Group (4).svg" alt="logo" />
+              <img class="w-[20px]" src="/assets/icons/Group (4).svg" alt="logo">
               <div>
                 <p class="text-[10px]">Available on the</p>
-                <p class="text-lg">App Store</p>
+                <p class="text-[10px] sm:text-sm md:text-lg">App Store</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="flex justify-between items-center py-6 border-t border-b border-[#bebcbd] border-opacity-30"
-      >
-        <p class="text-[#f6f6f6] font-causten text-[29px] font-bold pl-14">
-          Popular Categories
-        </p>
-        <img class="pr-8" src="/assets/icons/Icon.svg" alt="icon" />
+      <div class="flex justify-between items-center py-6 border-t border-b border-[#bebcbd] border-opacity-30">
+        <p class="text-[#f6f6f6] font-causten xl:text-[29px] font-bold">Popular Categories</p>
+        <img class="pr-8" src="/assets/icons/Icon.svg" alt="icon">
       </div>
-      <div
-        class="text-white text-lg font-bold font-causten flex justify-center items-center pt-[37px] pb-[60px]"
-      >
-        <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
-      </div>
+      <div class="text-white md:text-lg font-bold font-causten flex justify-center items-center pt-[37px] pb-[60px]"><p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p></div>
     </footer>
     <script src="/main.js"></script>
   </body>
