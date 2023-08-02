@@ -122,21 +122,18 @@
           <img src="/assets/icons/Icon (2).svg" alt="icon">
         </div>
         <div class="px-8 py-[40px] border-b border-l border-r border-border-color">
-          <div class="d-flex">
-            <div class="wrapper ">
-              <div class="slider">
-                <div class="progress"></div>
-              </div>
-              <div class="range-input">
-                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-              </div>
-              <div class="price-input flex justify-between items-center text-euphoria-black font-medium pt-8">
-                <div class="rounded-lg border border-border-color px-4">$70</div>
-                <div class="rounded-lg border border-border-color px-4">$600</div>
-                </div>
-              </div>
+          <div class="w-full relative">
+            <input type="range" class="max-price input-range" value="250" min="10" max="500" step="10" id="max">
+            <input type="range" class="min-price input-range" value="100" min="10" max="500" step="10" id="min">
+          </div>
+          <div class="flex items-center justify-between mt-10">
+            <div>
+              <label for="min" id="min-value" class="border border-border-color px-5 py-2 rounded-lg font-medium">$70</label>
             </div>
+            <div>
+              <label for="max" id="max-value" class="border border-border-color px-5 py-2 rounded-lg font-medium">$600</label>
+            </div>
+          </div>
           </div>
           <div class="flex justify-between items-center py-5 px-8 border-b border-l border-r border-border-color">
             <p class="text-euphoria-grey text-[22px] font-semibold">Colors</p>
@@ -518,5 +515,6 @@
       <div class="text-white md:text-lg font-bold font-causten flex justify-center items-center pt-[37px] pb-[60px]"><p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p></div>
     </footer>
     <script src="/main.js"></script>
+    <script src="/priceRange.js"></script>
 </body>
 </html>
