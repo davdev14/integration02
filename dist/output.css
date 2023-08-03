@@ -3337,4 +3337,12 @@ input[type="range"]::-moz-range-thumb {
   .\33xl\:pr-\[525px\] {
     padding-right: 525px;
   }
+
+  .\33xl\:pr-\[520px\] {
+    padding-right: 520px;
+  }
+
+  .\33xl\:pr-\[515px\] {
+    padding-right: 515px;
+  }
 }
